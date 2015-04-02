@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     64840,       1534]
-NotebookOptionsPosition[     64021,       1505]
-NotebookOutlinePosition[     64375,       1521]
-CellTagsIndexPosition[     64332,       1518]
+NotebookDataLength[     66142,       1561]
+NotebookOptionsPosition[     65323,       1532]
+NotebookOutlinePosition[     65677,       1548]
+CellTagsIndexPosition[     65634,       1545]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -880,7 +880,10 @@ Cell[BoxData[{
                RowBox[{"(", 
                 RowBox[{"Rad53tot", "-", 
                  RowBox[{"y", "[", "t", "]"}]}], ")"}]}], ")"}]}]}], "+", 
-           RowBox[{"v6", "*", 
+           RowBox[{"r2", "*", 
+            RowBox[{"m", "/", 
+             RowBox[{"(", 
+              RowBox[{"n1", "+", "m"}], ")"}]}], "*", 
             RowBox[{
              RowBox[{"y", "[", "t", "]"}], "^", "n1"}], "*", 
             RowBox[{
@@ -889,7 +892,9 @@ Cell[BoxData[{
                RowBox[{"y", "[", "t", "]"}]}], ")"}], "/", 
              RowBox[{"(", 
               RowBox[{
-               RowBox[{"k6", "^", "n1"}], "+", 
+               RowBox[{"m", "/", 
+                RowBox[{"(", 
+                 RowBox[{"n1", "+", "m"}], ")"}]}], "+", 
                RowBox[{
                 RowBox[{"y", "[", "t", "]"}], "^", "n1"}]}], ")"}]}]}], "-", 
            RowBox[{"v7", "*", 
@@ -1008,14 +1013,19 @@ Cell[BoxData[{
                RowBox[{"k5", "+", 
                 RowBox[{"(", 
                  RowBox[{"Rad53tot", "-", "y"}], ")"}]}], ")"}]}]}], "+", 
-            RowBox[{"v6", "*", 
+            RowBox[{"r2", "*", 
+             RowBox[{"m", "/", 
+              RowBox[{"(", 
+               RowBox[{"n1", "+", "m"}], ")"}]}], "*", 
              RowBox[{"y", "^", "n1"}], "*", 
              RowBox[{
               RowBox[{"(", 
                RowBox[{"Rad53tot", "-", "y"}], ")"}], "/", 
               RowBox[{"(", 
                RowBox[{
-                RowBox[{"k6", "^", "n1"}], "+", 
+                RowBox[{"m", "/", 
+                 RowBox[{"(", 
+                  RowBox[{"n1", "+", "m"}], ")"}]}], "+", 
                 RowBox[{"y", "^", "n1"}]}], ")"}]}]}], "-", 
             RowBox[{"v7", "*", 
              RowBox[{"y", "/", 
@@ -1083,14 +1093,19 @@ Cell[BoxData[{
               RowBox[{"k5", "+", 
                RowBox[{"(", 
                 RowBox[{"Rad53tot", "-", "y"}], ")"}]}], ")"}]}]}], "+", 
-           RowBox[{"v6", "*", 
+           RowBox[{"r2", "*", 
+            RowBox[{"m", "/", 
+             RowBox[{"(", 
+              RowBox[{"n1", "+", "m"}], ")"}]}], "*", 
             RowBox[{"y", "^", "n1"}], "*", 
             RowBox[{
              RowBox[{"(", 
               RowBox[{"Rad53tot", "-", "y"}], ")"}], "/", 
              RowBox[{"(", 
               RowBox[{
-               RowBox[{"k6", "^", "n1"}], "+", 
+               RowBox[{"m", "/", 
+                RowBox[{"(", 
+                 RowBox[{"n1", "+", "m"}], ")"}]}], "+", 
                RowBox[{"y", "^", "n1"}]}], ")"}]}]}], "-", 
            RowBox[{"v7", "*", 
             RowBox[{"y", "/", 
@@ -1147,11 +1162,15 @@ Cell[BoxData[{
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{"v6", ",", "15"}], "}"}], ",", "0", ",", "100"}], "}"}], ",", 
+      RowBox[{"k6", ",", "0.35"}], "}"}], ",", "0", ",", "10"}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{"k6", ",", "0.35"}], "}"}], ",", "0", ",", "10"}], "}"}], ",", 
+      RowBox[{"m", ",", "2"}], "}"}], ",", "0", ",", "10"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"r2", ",", "80"}], "}"}], ",", "0", ",", "100"}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
@@ -1259,25 +1278,29 @@ Cell[BoxData[{
    3.635812035530492*^9, {3.6358120743742633`*^9, 3.6358121085381575`*^9}, {
    3.635812178413439*^9, 3.6358122585703764`*^9}, {3.6358123475500174`*^9, 
    3.6358124384932337`*^9}, {3.6358150919672785`*^9, 3.635815145620426*^9}, {
-   3.6358152077710457`*^9, 3.635815215798854*^9}}],
+   3.6358152077710457`*^9, 3.635815215798854*^9}, {3.6369503272590523`*^9, 
+   3.6369504875586185`*^9}, {3.636950563002317*^9, 3.6369505824206886`*^9}, 
+   3.6369506219764633`*^9, 3.636950656499561*^9, {3.636950756327872*^9, 
+   3.636950760171999*^9}, {3.63695090046072*^9, 3.6369509008357253`*^9}}],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`a$$ = 3., $CellContext`b$$ = 
+   DynamicModuleBox[{$CellContext`a$$ = 2, $CellContext`b$$ = 
     0, $CellContext`c$$ = 0, $CellContext`color$$ = 
     "AlpineColors", $CellContext`HU$$ = 1, $CellContext`k11$$ = 
-    0.16, $CellContext`k12$$ = 0.10200000000000001`, $CellContext`k5$$ = 
+    0.1, $CellContext`k12$$ = 0.08, $CellContext`k5$$ = 
     7.08, $CellContext`k6$$ = 0.35, $CellContext`k7$$ = 
-    0.17, $CellContext`k8$$ = 0.5, $CellContext`k9$$ = 1, $CellContext`n1$$ = 
-    2, $CellContext`n2$$ = 6, $CellContext`n3$$ = 3, $CellContext`Rad53tot$$ =
-     1, $CellContext`scale$$ = 0.5, $CellContext`style$$ = 
+    0.17, $CellContext`k8$$ = 0.5, $CellContext`k9$$ = 1, $CellContext`m$$ = 
+    2, $CellContext`n1$$ = 2, $CellContext`n2$$ = 6, $CellContext`n3$$ = 
+    3, $CellContext`r2$$ = 80, $CellContext`Rad53tot$$ = 
+    1, $CellContext`scale$$ = 0.5, $CellContext`style$$ = 
     "Arrow", $CellContext`tmax$$ = 10, $CellContext`v10$$ = 
-    1, $CellContext`v11$$ = 1.6600000000000001`, $CellContext`v12$$ = 
-    58., $CellContext`v13$$ = 1.02, $CellContext`v14$$ = 
-    131., $CellContext`v5$$ = 5.3, $CellContext`v6$$ = 15, $CellContext`v7$$ =
-     7.5, $CellContext`v8$$ = 2.16, $CellContext`v9$$ = 5, Typeset`show$$ = 
-    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    1, $CellContext`v11$$ = 0.26, $CellContext`v12$$ = 
+    100, $CellContext`v13$$ = 1.6, $CellContext`v14$$ = 
+    160, $CellContext`v5$$ = 5.3, $CellContext`v7$$ = 7.5, $CellContext`v8$$ =
+     2.16, $CellContext`v9$$ = 5, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"\:65e0\:6807\:9898\"", Typeset`specs$$ = {{
       Hold[$CellContext`style$$], {
@@ -1304,8 +1327,9 @@ Cell[BoxData[
        Hold[$CellContext`c$$], 0, "Rnr3tot_intial"}, 0, 10}, {{
        Hold[$CellContext`v5$$], 5.3}, 0, 100}, {{
        Hold[$CellContext`k5$$], 7.08}, 0, 10}, {{
-       Hold[$CellContext`v6$$], 15}, 0, 100}, {{
        Hold[$CellContext`k6$$], 0.35}, 0, 10}, {{
+       Hold[$CellContext`m$$], 2}, 0, 10}, {{
+       Hold[$CellContext`r2$$], 80}, 0, 100}, {{
        Hold[$CellContext`n1$$], 2}, 0, 10}, {{
        Hold[$CellContext`v7$$], 7.5}, 0, 10}, {{
        Hold[$CellContext`k7$$], 0.17}, 0, 10}, {{
@@ -1325,13 +1349,13 @@ Cell[BoxData[
        Hold[$CellContext`Rad53tot$$], 1}, 0, 10}, {{
        Hold[$CellContext`HU$$], 1}, 0.6, 1.5}, {{
        Hold[$CellContext`tmax$$], 10}, 0, 100}}, Typeset`size$$ = {
-    1029.5, {684., 156.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = True, $CellContext`style$1408076$$ = 
-    0, $CellContext`color$1408077$$ = 0, $CellContext`scale$1408078$$ = 
-    0, $CellContext`a$1408079$$ = 0, $CellContext`b$1408080$$ = 
-    0, $CellContext`c$1408081$$ = 0, $CellContext`v5$1408082$$ = 
-    0, $CellContext`k5$1408083$$ = 0, $CellContext`v6$1408084$$ = 
-    0, $CellContext`k6$1408085$$ = 0}, 
+    1029.5, {687., 160.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`style$97418$$ = 
+    0, $CellContext`color$97419$$ = 0, $CellContext`scale$97420$$ = 
+    0, $CellContext`a$97421$$ = 0, $CellContext`b$97422$$ = 
+    0, $CellContext`c$97423$$ = 0, $CellContext`v5$97424$$ = 
+    0, $CellContext`k5$97425$$ = 0, $CellContext`k6$97426$$ = 
+    0, $CellContext`m$97427$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`a$$ = 2, $CellContext`b$$ = 
@@ -1340,25 +1364,25 @@ Cell[BoxData[
         0.1, $CellContext`k12$$ = 0.08, $CellContext`k5$$ = 
         7.08, $CellContext`k6$$ = 0.35, $CellContext`k7$$ = 
         0.17, $CellContext`k8$$ = 0.5, $CellContext`k9$$ = 
-        1, $CellContext`n1$$ = 2, $CellContext`n2$$ = 6, $CellContext`n3$$ = 
-        3, $CellContext`Rad53tot$$ = 1, $CellContext`scale$$ = 
+        1, $CellContext`m$$ = 2, $CellContext`n1$$ = 2, $CellContext`n2$$ = 
+        6, $CellContext`n3$$ = 3, $CellContext`r2$$ = 
+        80, $CellContext`Rad53tot$$ = 1, $CellContext`scale$$ = 
         0.5, $CellContext`style$$ = "Arrow", $CellContext`tmax$$ = 
         10, $CellContext`v10$$ = 1, $CellContext`v11$$ = 
         0.26, $CellContext`v12$$ = 100, $CellContext`v13$$ = 
         1.6, $CellContext`v14$$ = 160, $CellContext`v5$$ = 
-        5.3, $CellContext`v6$$ = 15, $CellContext`v7$$ = 
-        7.5, $CellContext`v8$$ = 2.16, $CellContext`v9$$ = 5}, 
-      "ControllerVariables" :> {
-        Hold[$CellContext`style$$, $CellContext`style$1408076$$, 0], 
-        Hold[$CellContext`color$$, $CellContext`color$1408077$$, 0], 
-        Hold[$CellContext`scale$$, $CellContext`scale$1408078$$, 0], 
-        Hold[$CellContext`a$$, $CellContext`a$1408079$$, 0], 
-        Hold[$CellContext`b$$, $CellContext`b$1408080$$, 0], 
-        Hold[$CellContext`c$$, $CellContext`c$1408081$$, 0], 
-        Hold[$CellContext`v5$$, $CellContext`v5$1408082$$, 0], 
-        Hold[$CellContext`k5$$, $CellContext`k5$1408083$$, 0], 
-        Hold[$CellContext`v6$$, $CellContext`v6$1408084$$, 0], 
-        Hold[$CellContext`k6$$, $CellContext`k6$1408085$$, 0]}, 
+        5.3, $CellContext`v7$$ = 7.5, $CellContext`v8$$ = 
+        2.16, $CellContext`v9$$ = 5}, "ControllerVariables" :> {
+        Hold[$CellContext`style$$, $CellContext`style$97418$$, 0], 
+        Hold[$CellContext`color$$, $CellContext`color$97419$$, 0], 
+        Hold[$CellContext`scale$$, $CellContext`scale$97420$$, 0], 
+        Hold[$CellContext`a$$, $CellContext`a$97421$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$97422$$, 0], 
+        Hold[$CellContext`c$$, $CellContext`c$97423$$, 0], 
+        Hold[$CellContext`v5$$, $CellContext`v5$97424$$, 0], 
+        Hold[$CellContext`k5$$, $CellContext`k5$97425$$, 0], 
+        Hold[$CellContext`k6$$, $CellContext`k6$97426$$, 0], 
+        Hold[$CellContext`m$$, $CellContext`m$97427$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1382,11 +1406,12 @@ $CellContext`k12$$)) -
             1][$CellContext`y][$CellContext`t] == $CellContext`v5$$ \
 $CellContext`x[$CellContext`t] (($CellContext`Rad53tot$$ - \
 $CellContext`y[$CellContext`t])/($CellContext`k5$$ + ($CellContext`Rad53tot$$ - \
-$CellContext`y[$CellContext`t]))) + $CellContext`v6$$ \
+$CellContext`y[$CellContext`t]))) + $CellContext`r2$$ \
+($CellContext`m$$/($CellContext`n1$$ + $CellContext`m$$)) \
 $CellContext`y[$CellContext`t]^$CellContext`n1$$ (($CellContext`Rad53tot$$ - \
-$CellContext`y[$CellContext`t])/($CellContext`k6$$^$CellContext`n1$$ + \
-$CellContext`y[$CellContext`t]^$CellContext`n1$$)) - $CellContext`v7$$ \
-($CellContext`y[$CellContext`t]/($CellContext`k7$$ + \
+$CellContext`y[$CellContext`t])/($CellContext`m$$/($CellContext`n1$$ + \
+$CellContext`m$$) + $CellContext`y[$CellContext`t]^$CellContext`n1$$)) - \
+$CellContext`v7$$ ($CellContext`y[$CellContext`t]/($CellContext`k7$$ + \
 $CellContext`y[$CellContext`t])), 
            Derivative[
             1][$CellContext`z][$CellContext`t] == $CellContext`v10$$ + \
@@ -1424,9 +1449,9 @@ $CellContext`y^$CellContext`n3$$)))/($CellContext`v14$$ \
 $CellContext`k12$$)) - 1))/($CellContext`k9$$ + $CellContext`x)) == 
            0, $CellContext`v5$$ $CellContext`x (($CellContext`Rad53tot$$ - \
 $CellContext`y)/($CellContext`k5$$ + ($CellContext`Rad53tot$$ - \
-$CellContext`y))) + $CellContext`v6$$ $CellContext`y^$CellContext`n1$$ \
-(($CellContext`Rad53tot$$ - \
-$CellContext`y)/($CellContext`k6$$^$CellContext`n1$$ + \
+$CellContext`y))) + $CellContext`r2$$ ($CellContext`m$$/($CellContext`n1$$ + \
+$CellContext`m$$)) $CellContext`y^$CellContext`n1$$ (($CellContext`Rad53tot$$ - \
+$CellContext`y)/($CellContext`m$$/($CellContext`n1$$ + $CellContext`m$$) + \
 $CellContext`y^$CellContext`n1$$)) - $CellContext`v7$$ \
 ($CellContext`y/($CellContext`k7$$ + $CellContext`y)) == 0}, {$CellContext`x, 
            0, 10}, {$CellContext`y, 0, 1}, ImageSize -> 500, GridLines -> 
@@ -1443,9 +1468,10 @@ $CellContext`y^$CellContext`n3$$)))/($CellContext`v14$$ \
 $CellContext`k12$$)) - 
              1))/($CellContext`k9$$ + $CellContext`x)), $CellContext`v5$$ \
 $CellContext`x (($CellContext`Rad53tot$$ - $CellContext`y)/($CellContext`k5$$ + \
-($CellContext`Rad53tot$$ - $CellContext`y))) + $CellContext`v6$$ \
+($CellContext`Rad53tot$$ - $CellContext`y))) + $CellContext`r2$$ \
+($CellContext`m$$/($CellContext`n1$$ + $CellContext`m$$)) \
 $CellContext`y^$CellContext`n1$$ (($CellContext`Rad53tot$$ - \
-$CellContext`y)/($CellContext`k6$$^$CellContext`n1$$ + \
+$CellContext`y)/($CellContext`m$$/($CellContext`n1$$ + $CellContext`m$$) + \
 $CellContext`y^$CellContext`n1$$)) - $CellContext`v7$$ \
 ($CellContext`y/($CellContext`k7$$ + $CellContext`y))}, {$CellContext`x, 0, 
            10}, {$CellContext`y, 0, 1}, ImageSize -> 500, Axes -> True, 
@@ -1476,12 +1502,12 @@ $CellContext`y^$CellContext`n1$$)) - $CellContext`v7$$ \
          10}, {{$CellContext`b$$, 0, "Rad53p_intial"}, 0, 
          10}, {{$CellContext`c$$, 0, "Rnr3tot_intial"}, 0, 
          10}, {{$CellContext`v5$$, 5.3}, 0, 100}, {{$CellContext`k5$$, 7.08}, 
-         0, 10}, {{$CellContext`v6$$, 15}, 0, 
-         100}, {{$CellContext`k6$$, 0.35}, 0, 10}, {{$CellContext`n1$$, 2}, 0,
-          10}, {{$CellContext`v7$$, 7.5}, 0, 10}, {{$CellContext`k7$$, 0.17}, 
-         0, 10}, {{$CellContext`v8$$, 2.16}, 0, 
-         10}, {{$CellContext`k8$$, 0.5}, 0, 1}, {{$CellContext`n2$$, 6}, 0, 
-         10}, {{$CellContext`n3$$, 3}, 0, 10}, {{$CellContext`v9$$, 5}, 0, 
+         0, 10}, {{$CellContext`k6$$, 0.35}, 0, 10}, {{$CellContext`m$$, 2}, 
+         0, 10}, {{$CellContext`r2$$, 80}, 0, 100}, {{$CellContext`n1$$, 2}, 
+         0, 10}, {{$CellContext`v7$$, 7.5}, 0, 
+         10}, {{$CellContext`k7$$, 0.17}, 0, 10}, {{$CellContext`v8$$, 2.16}, 
+         0, 10}, {{$CellContext`k8$$, 0.5}, 0, 1}, {{$CellContext`n2$$, 6}, 0,
+          10}, {{$CellContext`n3$$, 3}, 0, 10}, {{$CellContext`v9$$, 5}, 0, 
          10}, {{$CellContext`k9$$, 1}, 0, 10}, {{$CellContext`v10$$, 1}, 0, 
          10}, {{$CellContext`v11$$, 0.26}, 0, 10}, {{$CellContext`k11$$, 0.1},
           0, 10}, {{$CellContext`v12$$, 100}, 0, 
@@ -1490,7 +1516,7 @@ $CellContext`y^$CellContext`n1$$)) - $CellContext`v7$$ \
          200}, {{$CellContext`Rad53tot$$, 1}, 0, 10}, {{$CellContext`HU$$, 1},
           0.6, 1.5}, {{$CellContext`tmax$$, 10}, 0, 100}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{1776., {610., 615.}},
+     ImageSizeCache->{1776., {597., 602.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1500,7 +1526,8 @@ $CellContext`y^$CellContext`n1$$)) - $CellContext`v7$$ \
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.6358167736917953`*^9, 3.6358170608513603`*^9}]
+ CellChangeTimes->{3.6358167736917953`*^9, 3.6358170608513603`*^9, 
+  3.6369506600939093`*^9, 3.6369507611720057`*^9, 3.6369509014451084`*^9}]
 }, Open  ]]
 },
 WindowSize->{1902, 913},
@@ -1533,8 +1560,8 @@ Cell[31164, 777, 543, 10, 31, "Input"],
 Cell[31710, 789, 247, 5, 31, "Input"],
 Cell[31960, 796, 96, 1, 31, "Input"],
 Cell[CellGroupData[{
-Cell[32081, 801, 17880, 460, 312, "Input"],
-Cell[49964, 1263, 14041, 239, 1242, "Output"]
+Cell[32081, 801, 18818, 482, 332, "Input"],
+Cell[50902, 1285, 14405, 244, 1254, "Output"]
 }, Open  ]]
 }
 ]
